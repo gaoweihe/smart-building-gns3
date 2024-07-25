@@ -20,19 +20,19 @@
         "links": [
             {
                 "filters": {},
-                "link_id": "034be0da-f573-43af-874b-3269854b3149",
+                "link_id": "2756ac1d-2615-4109-b8fc-a3ae781bf52b",
                 "link_style": {},
                 "nodes": [
                     {
-                        "adapter_number": 1,
+                        "adapter_number": 0,
                         "label": {
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "g1/0",
-                            "x": 59,
-                            "y": -7
+                            "text": "e0",
+                            "x": 19,
+                            "y": -15
                         },
-                        "node_id": "c07058c0-4e6c-404a-9f8d-38175690d547",
+                        "node_id": "a1984445-f249-4b2c-a155-1ad082bc3bd8",
                         "port_number": 0
                     },
                     {
@@ -41,8 +41,8 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
-                            "x": 8,
-                            "y": 45
+                            "x": 49,
+                            "y": 53
                         },
                         "node_id": "1f00c164-70ea-4570-bad2-718089f72596",
                         "port_number": 0
@@ -52,7 +52,7 @@
             },
             {
                 "filters": {},
-                "link_id": "20ff2bab-9093-4ac8-a243-bcabc2c97bbb",
+                "link_id": "164b7d8b-8a19-4144-a304-1d456aa1e984",
                 "link_style": {},
                 "nodes": [
                     {
@@ -60,11 +60,43 @@
                         "label": {
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": 68,
-                            "y": 46
+                            "text": "eth0",
+                            "x": 0,
+                            "y": 13
                         },
-                        "node_id": "a699b7b6-b22b-4650-be48-7fdf6d8d26c7",
+                        "node_id": "c12feda0-5210-4d34-8ed6-e2dfc0e3bd9a",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e7",
+                            "x": 69,
+                            "y": 37
+                        },
+                        "node_id": "1f00c164-70ea-4570-bad2-718089f72596",
+                        "port_number": 7
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "5e0fa9aa-0694-40dd-95e9-35d859fc4e7d",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 1,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e1",
+                            "x": 33,
+                            "y": 61
+                        },
+                        "node_id": "a1984445-f249-4b2c-a155-1ad082bc3bd8",
                         "port_number": 0
                     },
                     {
@@ -73,10 +105,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e1",
-                            "x": 0,
-                            "y": 0
+                            "x": 35,
+                            "y": -23
                         },
-                        "node_id": "1f00c164-70ea-4570-bad2-718089f72596",
+                        "node_id": "748b499d-8660-4f40-8946-6295346092ce",
                         "port_number": 1
                     }
                 ],
@@ -84,7 +116,7 @@
             },
             {
                 "filters": {},
-                "link_id": "6c6c62b1-4fdb-49c1-a876-67aa55b879cd",
+                "link_id": "db46d034-37eb-4904-950e-265e2115ffad",
                 "link_style": {},
                 "nodes": [
                     {
@@ -92,11 +124,43 @@
                         "label": {
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e0",
-                            "x": -2,
-                            "y": 48
+                            "text": "eth1",
+                            "x": 77,
+                            "y": -4
                         },
-                        "node_id": "868b4045-d56b-4eb5-ad2b-c503bfc7edf2",
+                        "node_id": "1c7fd4fb-84e3-44ac-9944-f16cc82cf023",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": 37,
+                            "y": 55
+                        },
+                        "node_id": "748b499d-8660-4f40-8946-6295346092ce",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "7c2c7bf0-c8f0-4c1e-9f28-bbc9a4467741",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "eth0",
+                            "x": 50,
+                            "y": 65
+                        },
+                        "node_id": "b2d75039-b952-4fca-8cfe-fa18f412cc8e",
                         "port_number": 0
                     },
                     {
@@ -104,87 +168,18 @@
                         "label": {
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e2",
-                            "x": 70,
-                            "y": -3
+                            "text": "e1",
+                            "x": 17,
+                            "y": -19
                         },
                         "node_id": "1f00c164-70ea-4570-bad2-718089f72596",
-                        "port_number": 2
+                        "port_number": 1
                     }
                 ],
                 "suspend": false
             }
         ],
         "nodes": [
-            {
-                "compute_id": "vm",
-                "console": 5000,
-                "console_auto_start": false,
-                "console_type": "telnet",
-                "custom_adapters": [],
-                "first_port_name": null,
-                "height": 45,
-                "label": {
-                    "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "R1",
-                    "x": 20,
-                    "y": -25
-                },
-                "locked": false,
-                "name": "R1",
-                "node_id": "c07058c0-4e6c-404a-9f8d-38175690d547",
-                "node_type": "dynamips",
-                "port_name_format": "Ethernet{0}",
-                "port_segment_size": 0,
-                "properties": {
-                    "auto_delete_disks": true,
-                    "aux": null,
-                    "clock_divisor": 4,
-                    "disk0": 0,
-                    "disk1": 0,
-                    "dynamips_id": 1,
-                    "exec_area": 64,
-                    "idlemax": 500,
-                    "idlepc": "0x606df838",
-                    "idlesleep": 30,
-                    "image": "c7200-adventerprisek9-mz.124-24.T5.image",
-                    "image_md5sum": "6b89d0d804e1f2bb5b8bda66b5692047",
-                    "mac_addr": "ca01.1027.0000",
-                    "midplane": "vxr",
-                    "mmap": true,
-                    "npe": "npe-400",
-                    "nvram": 512,
-                    "platform": "c7200",
-                    "power_supplies": [
-                        1,
-                        1
-                    ],
-                    "ram": 512,
-                    "sensors": [
-                        22,
-                        22,
-                        22,
-                        22
-                    ],
-                    "slot0": "C7200-IO-FE",
-                    "slot1": "PA-GE",
-                    "slot2": "PA-GE",
-                    "slot3": null,
-                    "slot4": null,
-                    "slot5": null,
-                    "slot6": null,
-                    "sparsemem": true,
-                    "system_id": "FTX0945W0MY",
-                    "usage": ""
-                },
-                "symbol": ":/symbols/router.svg",
-                "template_id": "57d8cef2-2758-497b-94be-36bc8920c3e1",
-                "width": 66,
-                "x": -53,
-                "y": 91,
-                "z": 1
-            },
             {
                 "compute_id": "vm",
                 "console": 5005,
@@ -261,148 +256,322 @@
                 "symbol": ":/symbols/ethernet_switch.svg",
                 "template_id": "1966b864-93e7-32d5-965f-001384eec461",
                 "width": 72,
-                "x": 6,
-                "y": -1,
+                "x": 14,
+                "y": -14,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": null,
+                "console_auto_start": false,
+                "console_type": null,
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 71,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "cloud",
+                    "x": 57,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "cloud",
+                "node_id": "1c7fd4fb-84e3-44ac-9944-f16cc82cf023",
+                "node_type": "cloud",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "interfaces": [
+                        {
+                            "name": "docker0",
+                            "special": true,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "eth0",
+                            "special": false,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "eth1",
+                            "special": false,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "lo",
+                            "special": true,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "virbr0",
+                            "special": true,
+                            "type": "ethernet"
+                        },
+                        {
+                            "name": "virbr0-nic",
+                            "special": true,
+                            "type": "ethernet"
+                        }
+                    ],
+                    "ports_mapping": [
+                        {
+                            "interface": "eth0",
+                            "name": "eth0",
+                            "port_number": 0,
+                            "type": "ethernet"
+                        },
+                        {
+                            "interface": "eth1",
+                            "name": "eth1",
+                            "port_number": 1,
+                            "type": "ethernet"
+                        }
+                    ],
+                    "remote_console_host": "",
+                    "remote_console_http_path": "/",
+                    "remote_console_port": 23,
+                    "remote_console_type": "none"
+                },
+                "symbol": ":/symbols/cloud.svg",
+                "template_id": "39e257dc-8412-3174-b6b3-0ee3ed6a43e9",
+                "width": 159,
+                "x": -424,
+                "y": 295,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5901,
+                "console_auto_start": false,
+                "console_type": "vnc",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 70,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "webterm-1",
+                    "x": -6,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "webterm-1",
+                "node_id": "c12feda0-5210-4d34-8ed6-e2dfc0e3bd9a",
+                "node_type": "docker",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "adapters": 1,
+                    "aux": 5007,
+                    "console_http_path": "/",
+                    "console_http_port": 80,
+                    "console_resolution": "1024x768",
+                    "container_id": "f7b8305dee1e752c09661ab6767434c8818d6ab186af155b15e4f9aca9bdfb19",
+                    "environment": "",
+                    "extra_hosts": "",
+                    "extra_volumes": [],
+                    "image": "gns3/webterm:latest",
+                    "start_command": null,
+                    "usage": "The /root directory is persistent."
+                },
+                "symbol": "firefox.svg",
+                "template_id": "a5c256f1-fd22-4099-afe2-50236fd68c2d",
+                "width": 68,
+                "x": 227,
+                "y": -197,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5900,
+                "console_auto_start": false,
+                "console_type": "vnc",
+                "custom_adapters": [],
+                "first_port_name": "",
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "OpenWrt23.05.0-1",
+                    "x": -31,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "OpenWrt23.05.0-1",
+                "node_id": "a1984445-f249-4b2c-a155-1ad082bc3bd8",
+                "node_type": "qemu",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "adapter_type": "virtio-net-pci",
+                    "adapters": 4,
+                    "bios_image": "",
+                    "bios_image_md5sum": null,
+                    "boot_priority": "c",
+                    "cdrom_image": "",
+                    "cdrom_image_md5sum": null,
+                    "cpu_throttling": 0,
+                    "cpus": 1,
+                    "create_config_disk": false,
+                    "hda_disk_image": "openwrt-23.05.0-x86-64-generic-ext4-combined.img",
+                    "hda_disk_image_md5sum": "56b2e38fb515a27a78bb43a3937c13b4",
+                    "hda_disk_interface": "virtio",
+                    "hdb_disk_image": "",
+                    "hdb_disk_image_md5sum": null,
+                    "hdb_disk_interface": "none",
+                    "hdc_disk_image": "",
+                    "hdc_disk_image_md5sum": null,
+                    "hdc_disk_interface": "none",
+                    "hdd_disk_image": "",
+                    "hdd_disk_image_md5sum": null,
+                    "hdd_disk_interface": "none",
+                    "initrd": "",
+                    "initrd_md5sum": null,
+                    "kernel_command_line": "",
+                    "kernel_image": "",
+                    "kernel_image_md5sum": null,
+                    "legacy_networking": false,
+                    "linked_clone": true,
+                    "mac_address": "0c:98:44:45:00:00",
+                    "on_close": "power_off",
+                    "options": "",
+                    "platform": "x86_64",
+                    "process_priority": "normal",
+                    "qemu_path": "/bin/qemu-system-x86_64",
+                    "ram": 128,
+                    "replicate_network_connection_state": true,
+                    "tpm": false,
+                    "uefi": false,
+                    "usage": "Ethernet0 is the LAN link, Ethernet1 the WAN link, Ethernet2 and Ethernet3 are optional links."
+                },
+                "symbol": ":/symbols/router.svg",
+                "template_id": "1e1f1229-1585-49b4-ae67-9e65fa7aafb0",
+                "width": 66,
+                "x": -84,
+                "y": 305,
                 "z": 1
             },
             {
                 "compute_id": "vm",
                 "console": 5001,
                 "console_auto_start": false,
-                "console_type": "telnet",
+                "console_type": "none",
                 "custom_adapters": [],
-                "first_port_name": "",
-                "height": 59,
+                "first_port_name": null,
+                "height": 32,
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Ubuntu1",
-                    "x": 0,
+                    "text": "Switch2",
+                    "x": 5,
                     "y": -25
                 },
                 "locked": false,
-                "name": "Ubuntu1",
-                "node_id": "a699b7b6-b22b-4650-be48-7fdf6d8d26c7",
-                "node_type": "qemu",
+                "name": "Switch2",
+                "node_id": "748b499d-8660-4f40-8946-6295346092ce",
+                "node_type": "ethernet_switch",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
-                    "adapter_type": "virtio-net-pci",
-                    "adapters": 1,
-                    "bios_image": "",
-                    "bios_image_md5sum": null,
-                    "boot_priority": "c",
-                    "cdrom_image": "ubuntu-cloud-init-data.iso",
-                    "cdrom_image_md5sum": "9a90ee8f88736204c756015b3cd86500",
-                    "cpu_throttling": 0,
-                    "cpus": 1,
-                    "create_config_disk": false,
-                    "hda_disk_image": "ubuntu-22.04-server-cloudimg-amd64.img",
-                    "hda_disk_image_md5sum": "fa3e9f954b45e51feb72c1343b11f11f",
-                    "hda_disk_interface": "virtio",
-                    "hdb_disk_image": "",
-                    "hdb_disk_image_md5sum": null,
-                    "hdb_disk_interface": "none",
-                    "hdc_disk_image": "",
-                    "hdc_disk_image_md5sum": null,
-                    "hdc_disk_interface": "none",
-                    "hdd_disk_image": "",
-                    "hdd_disk_image_md5sum": null,
-                    "hdd_disk_interface": "none",
-                    "initrd": "",
-                    "initrd_md5sum": null,
-                    "kernel_command_line": "",
-                    "kernel_image": "",
-                    "kernel_image_md5sum": null,
-                    "legacy_networking": false,
-                    "linked_clone": true,
-                    "mac_address": "0c:99:b7:b6:00:00",
-                    "on_close": "power_off",
-                    "options": "-nographic",
-                    "platform": "x86_64",
-                    "process_priority": "normal",
-                    "qemu_path": "/usr/bin/qemu-system-x86_64",
-                    "ram": 1024,
-                    "replicate_network_connection_state": true,
-                    "tpm": false,
-                    "uefi": false,
-                    "usage": "Username: ubuntu\nPassword: ubuntu"
+                    "ports_mapping": [
+                        {
+                            "name": "Ethernet0",
+                            "port_number": 0,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet1",
+                            "port_number": 1,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet2",
+                            "port_number": 2,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet3",
+                            "port_number": 3,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet4",
+                            "port_number": 4,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet5",
+                            "port_number": 5,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet6",
+                            "port_number": 6,
+                            "type": "access",
+                            "vlan": 1
+                        },
+                        {
+                            "name": "Ethernet7",
+                            "port_number": 7,
+                            "type": "access",
+                            "vlan": 1
+                        }
+                    ]
                 },
-                "symbol": ":/symbols/classic/qemu_guest.svg",
-                "template_id": "8fa98db9-4e71-4546-9d68-56971d30ec81",
-                "width": 65,
-                "x": -122,
-                "y": -76,
+                "symbol": ":/symbols/ethernet_switch.svg",
+                "template_id": "1966b864-93e7-32d5-965f-001384eec461",
+                "width": 72,
+                "x": -215,
+                "y": 312,
                 "z": 1
             },
             {
                 "compute_id": "vm",
-                "console": 5003,
+                "console": 5902,
                 "console_auto_start": false,
-                "console_type": "telnet",
+                "console_type": "vnc",
                 "custom_adapters": [],
-                "first_port_name": "",
+                "first_port_name": null,
                 "height": 59,
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Ubuntu2",
-                    "x": 0,
+                    "text": "oitc-modbus-server-1",
+                    "x": -42,
                     "y": -25
                 },
                 "locked": false,
-                "name": "Ubuntu2",
-                "node_id": "868b4045-d56b-4eb5-ad2b-c503bfc7edf2",
-                "node_type": "qemu",
+                "name": "oitc-modbus-server-1",
+                "node_id": "b2d75039-b952-4fca-8cfe-fa18f412cc8e",
+                "node_type": "docker",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
                 "properties": {
-                    "adapter_type": "virtio-net-pci",
                     "adapters": 1,
-                    "bios_image": "",
-                    "bios_image_md5sum": null,
-                    "boot_priority": "c",
-                    "cdrom_image": "ubuntu-cloud-init-data.iso",
-                    "cdrom_image_md5sum": "9a90ee8f88736204c756015b3cd86500",
-                    "cpu_throttling": 0,
-                    "cpus": 1,
-                    "create_config_disk": false,
-                    "hda_disk_image": "ubuntu-22.04-server-cloudimg-amd64.img",
-                    "hda_disk_image_md5sum": "fa3e9f954b45e51feb72c1343b11f11f",
-                    "hda_disk_interface": "virtio",
-                    "hdb_disk_image": "",
-                    "hdb_disk_image_md5sum": null,
-                    "hdb_disk_interface": "none",
-                    "hdc_disk_image": "",
-                    "hdc_disk_image_md5sum": null,
-                    "hdc_disk_interface": "none",
-                    "hdd_disk_image": "",
-                    "hdd_disk_image_md5sum": null,
-                    "hdd_disk_interface": "none",
-                    "initrd": "",
-                    "initrd_md5sum": null,
-                    "kernel_command_line": "",
-                    "kernel_image": "",
-                    "kernel_image_md5sum": null,
-                    "legacy_networking": false,
-                    "linked_clone": true,
-                    "mac_address": "0c:8b:40:45:00:00",
-                    "on_close": "power_off",
-                    "options": "-nographic",
-                    "platform": "x86_64",
-                    "process_priority": "normal",
-                    "qemu_path": "/usr/bin/qemu-system-x86_64",
-                    "ram": 1024,
-                    "replicate_network_connection_state": true,
-                    "tpm": false,
-                    "uefi": false,
-                    "usage": "Username: ubuntu\nPassword: ubuntu"
+                    "aux": 5002,
+                    "console_http_path": "/",
+                    "console_http_port": 80,
+                    "console_resolution": "1024x768",
+                    "container_id": "91f86bb5c58da6ce55a81c53fabb59c51fef44fc28b1dc9c6dcdeb249cdfabd4",
+                    "environment": null,
+                    "extra_hosts": null,
+                    "extra_volumes": [],
+                    "image": "oitc/modbus-server:latest",
+                    "start_command": null,
+                    "usage": ""
                 },
-                "symbol": ":/symbols/classic/qemu_guest.svg",
-                "template_id": "8fa98db9-4e71-4546-9d68-56971d30ec81",
+                "symbol": ":/symbols/docker_guest.svg",
+                "template_id": "296ea86b-2266-484f-8545-a1a7c6b8f8d0",
                 "width": 65,
-                "x": 139,
-                "y": -86,
+                "x": -64,
+                "y": -193,
                 "z": 1
             }
         ]
@@ -410,5 +579,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.48",
-    "zoom": 100
+    "zoom": 59
 }
