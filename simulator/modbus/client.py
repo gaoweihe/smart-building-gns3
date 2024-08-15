@@ -44,20 +44,24 @@ def setup_clients():
     return clients
 
 def setup_server():  
-    di_datablock = lambda : ModbusSequentialDataBlock(0x00, [18] * 3)
-    co_datablock = lambda : ModbusSequentialDataBlock(0x10, [17] * 3)
-    hr_datablock = lambda : ModbusSequentialDataBlock(0x20, [0xFFFF] * 2)
-    ir_datablock = lambda : ModbusSequentialDataBlock(0x30, [15] * 3)
+    di_datablock = lambda : ModbusSequentialDataBlock(0x00, [0] * 4)
+    co_datablock = lambda : ModbusSequentialDataBlock(0x10, [0] * 4)
+    hr_datablock = lambda : ModbusSequentialDataBlock(0x20, [0] * 4)
+    ir_datablock = lambda : ModbusSequentialDataBlock(0x30, [0] * 4)
     
     slave_context = ModbusSlaveContext(
-        di=di_datablock(), co=co_datablock(), hr=hr_datablock(), ir=ir_datablock()
+        di = di_datablock(), 
+        co = co_datablock(), 
+        hr = hr_datablock(), 
+        ir = ir_datablock()
     )
     
     slaves = {
         0x01: slave_context
     }
     
-    server_context = ModbusServerContext(slaves=slaves, single=False)
+    server_context = ModbusServerContext(
+        slaves = slaves, single = False)
     
     return server_context
 
@@ -84,6 +88,16 @@ async def ac_calls(client):
             heating = True
         elif temperature > 20:
             heating = False
+            
+        # update server args 
+        runtime_args['server_context'].setValues(
+            0x10, 
+            0, 
+            [cooling])
+        runtime_args['server_context'].setValues(
+            0x11, 
+            0, 
+            [heating])
                     
         try:     
             await client.write_coil(0x10, cooling, slave = 1)
@@ -106,7 +120,13 @@ async def thermostat_calls(client):
                 1, 
                 slave = 1)
             temperature = rr.registers[0]
-            runtime_args['temperature'] = temperature
+            runtime_args['temperature'] = temperature 
+            
+            # update server args 
+            runtime_args['server_context'].setValues(
+                0x20, 
+                0, 
+                [temperature])
             
             # natural heating 
             temperature += random.randint(-3, 3)
@@ -137,9 +157,11 @@ async def main():
     global glb_config 
     with open('client-config.json') as f: 
         glb_config = json.load(f)
-        
+    
+    global runtime_args    
     client_contexts = setup_clients()
     server_context = setup_server()
+    runtime_args.server_context = server_context 
     
     await asyncio.gather(
         run_async_client(
@@ -152,4 +174,4 @@ async def main():
     )
 
 if __name__ == "__main__":
-    asyncio.run(main(), debug=True)
+    asyncio.run(main(), debug = True)

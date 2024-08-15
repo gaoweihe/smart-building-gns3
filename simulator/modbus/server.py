@@ -24,14 +24,18 @@ def setup_server():
     ir_datablock = lambda : ModbusSequentialDataBlock(0x30, [0] * 4)
     
     slave_context = ModbusSlaveContext(
-        di=di_datablock(), co=co_datablock(), hr=hr_datablock(), ir=ir_datablock()
+        di = di_datablock(), 
+        co = co_datablock(), 
+        hr = hr_datablock(), 
+        ir = ir_datablock()
     )
     
     slaves = {
         0x01: slave_context
     }
     
-    server_context = ModbusServerContext(slaves=slaves, single=False)
+    server_context = ModbusServerContext(
+        slaves = slaves, single = False)
 
     return server_context
 
@@ -51,4 +55,4 @@ async def async_helper():
 
 
 if __name__ == "__main__":
-    asyncio.run(async_helper(), debug=True)
+    asyncio.run(async_helper(), debug = True)
