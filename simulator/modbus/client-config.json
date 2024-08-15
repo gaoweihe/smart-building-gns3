@@ -1,0 +1,9 @@
+{
+    "ac-addr": "127.0.0.1", 
+    "ac-port": 50502, 
+    "thermostat-addr": "127.0.0.1", 
+    "thermostat-port": 50502, 
+    "server-addr": "0.0.0.0", 
+    "server-port": 50502, 
+    "server-index": 1
+}

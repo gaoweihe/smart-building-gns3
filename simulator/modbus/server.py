@@ -8,29 +8,30 @@ from pymodbus import __version__ as pymodbus_version
 from pymodbus.datastore import (
     ModbusSequentialDataBlock,
     ModbusServerContext,
-    ModbusSlaveContext,
-    ModbusSparseDataBlock,
+    ModbusSlaveContext
 )
-from pymodbus.device import ModbusDeviceIdentification
 from pymodbus.server import (
-    StartAsyncSerialServer,
-    StartAsyncTcpServer,
-    StartAsyncTlsServer,
-    StartAsyncUdpServer,
+    StartAsyncTcpServer
 )
 
 _logger = logging.getLogger(__file__)
 _logger.setLevel(logging.INFO)
 
 def setup_server():
-    datablock = lambda : ModbusSequentialDataBlock(0x00, [18] * 4)
+    di_datablock = lambda : ModbusSequentialDataBlock(0x00, [0] * 4)
+    co_datablock = lambda : ModbusSequentialDataBlock(0x10, [0] * 4)
+    hr_datablock = lambda : ModbusSequentialDataBlock(0x20, [0] * 4)
+    ir_datablock = lambda : ModbusSequentialDataBlock(0x30, [0] * 4)
     
     slave_context = ModbusSlaveContext(
-        di=datablock(), co=datablock(), hr=datablock(), ir=datablock()
+        di=di_datablock(), co=co_datablock(), hr=hr_datablock(), ir=ir_datablock()
     )
-    single = True
     
-    server_context = ModbusServerContext(slaves=slave_context, single=single)
+    slaves = {
+        0x01: slave_context
+    }
+    
+    server_context = ModbusServerContext(slaves=slaves, single=False)
 
     return server_context
 
@@ -45,8 +46,6 @@ async def run_async_server(server_context):
 
 
 async def async_helper():
-    """Combine setup and run."""
-    _logger.info("Starting...")
     server_context = setup_server()
     await run_async_server(server_context)
 
