@@ -25,7 +25,8 @@ glb_config = {}
 runtime_args = {
     'temperature': 20,
     'cooling': False, 
-    'heating': False
+    'heating': False, 
+    'server_context': None
 }
 
 def setup_clients(): 
