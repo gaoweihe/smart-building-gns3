@@ -168,7 +168,7 @@ async def main():
     global runtime_args    
     client_contexts = setup_clients()
     server_context = setup_server()
-    runtime_args.server_context = server_context 
+    runtime_args['server_context'] = server_context 
     
     await asyncio.gather(
         run_async_client(
