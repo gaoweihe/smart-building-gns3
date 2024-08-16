@@ -147,6 +147,7 @@ async def thermostat_calls(client):
             pass 
         
         logging.info(f"temperature: {temperature} | cooling: {runtime_args['cooling']} | heating: {runtime_args['heating']}")
+        print(f"temperature: {temperature} | cooling: {runtime_args['cooling']} | heating: {runtime_args['heating']}") 
         
         time.sleep(1)
          
