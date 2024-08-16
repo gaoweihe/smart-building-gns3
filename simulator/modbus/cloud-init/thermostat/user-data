@@ -22,7 +22,7 @@ write_files:
         ethernets:
           ens3:
             dhcp4: no
-            addresses: [192.168.2.22/24]
+            addresses: [192.168.2.21/24]
             gateway4: 192.168.2.1
             nameservers:
               addresses: [8.8.8.8, 1.1.1.1]
