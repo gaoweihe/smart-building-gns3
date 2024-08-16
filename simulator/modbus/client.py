@@ -146,6 +146,8 @@ async def thermostat_calls(client):
         except ModbusException:
             pass 
         
+        logging.info(f"temperature: {temperature} | cooling: {runtime_args['cooling']} | heating: {runtime_args['heating']}")
+        
         time.sleep(1)
          
 
