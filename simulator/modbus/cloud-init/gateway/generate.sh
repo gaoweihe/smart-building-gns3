@@ -1,1 +1,1 @@
-genisoimage -output cloud-init.iso -volid cidata -joliet -rock user-data meta-data
+genisoimage -output cloud-init-gateway.iso -volid cidata -joliet -rock user-data meta-data

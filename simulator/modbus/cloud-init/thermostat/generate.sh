@@ -1,1 +1,1 @@
-genisoimage -output cloud-init.iso -volid cidata -joliet -rock user-data meta-data
+genisoimage -output cloud-init-thermostat.iso -volid cidata -joliet -rock user-data meta-data
