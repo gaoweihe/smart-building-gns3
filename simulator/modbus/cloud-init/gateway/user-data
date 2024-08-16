@@ -35,5 +35,6 @@ runcmd:
   - netplan apply
   - apt install python3-pip -y 
   - su -l gns3
+  - cd /home/gns3
   - pip3 install pymodbus
   - git clone https://github.com/gaoweihe/smart-building-gns3.git
