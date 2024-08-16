@@ -14,7 +14,7 @@ chpasswd:
   expire: False
 
 write_files:
-  - path: /etc/netplan/01-netcfg.yaml
+  - path: /etc/netplan/50-cloud-init.yaml
     content: |
       network:
         version: 2
