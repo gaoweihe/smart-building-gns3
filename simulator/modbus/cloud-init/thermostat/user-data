@@ -1,0 +1,37 @@
+#cloud-config
+hostname: modbus-sim-thermostat
+fqdn: modbus-sim-thermostat.local
+
+users:
+  - default
+  - name: gns3
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    groups: users,admin
+chpasswd:
+  list: |
+    gns3:gns3
+  expire: False
+
+write_files:
+  - path: /etc/netplan/01-netcfg.yaml
+    content: |
+      network:
+        version: 2
+        renderer: networkd
+        ethernets:
+          ens3:
+            dhcp4: no
+            addresses: [192.168.2.22/24]
+            gateway4: 192.168.2.1
+            nameservers:
+              addresses: [8.8.8.8, 1.1.1.1]
+
+package_update: true
+
+runcmd:
+  - netplan apply
+  - sudo apt install python3-pip -y 
+  - pip3 install pymodbus
+  - cd /home/gns3
+  - git clone https://github.com/gaoweihe/smart-building-gns3.git
