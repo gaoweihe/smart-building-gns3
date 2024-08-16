@@ -127,7 +127,8 @@ async def thermostat_calls(client):
             runtime_args['temperature'] = temperature 
             
             # update server args 
-            (runtime_args['server_context'].slaves())[1].setValues(
+            print(runtime_args['server_context'].slaves())
+            (runtime_args['server_context'].slaves())[0].setValues(
                 0x20, 
                 0, 
                 [temperature])
