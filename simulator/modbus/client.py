@@ -5,6 +5,7 @@ import logging
 import sys
 import json
 import random
+import time
 
 import pymodbus.client as modbusClient
 from pymodbus import ModbusException
@@ -104,6 +105,8 @@ async def ac_calls(client):
             await client.write_coil(0x11, heating, slave = 1)
         except ModbusException:
             pass 
+        
+        time.sleep(1)
     
 async def thermostat_calls(client): 
     # initialize thermostat temperature
@@ -140,7 +143,10 @@ async def thermostat_calls(client):
                 temperature, 
                 slave = 1) 
         except ModbusException:
-            pass    
+            pass 
+        
+        time.sleep(1)
+         
 
 async def run_async_server(server_context): 
     address = (
