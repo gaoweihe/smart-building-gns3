@@ -92,13 +92,13 @@ async def ac_calls(client):
             heating = False
             
         # update server args 
-        runtime_args['server_context'].setValues(
+        runtime_args['server_context'][1].setValues(
+            0x01, 
             0x10, 
-            0, 
             [cooling])
-        runtime_args['server_context'].setValues(
+        runtime_args['server_context'][1].setValues(
+            0x01, 
             0x11, 
-            0, 
             [heating])
                     
         try:     
